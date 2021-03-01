@@ -1,0 +1,28 @@
+{
+  "name": "ts-test-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "rimraf ./build && tsc",
+    "test": "mocha -r ts-node/register 'src/tests/**/*.ts'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^14.14.31",
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "@types/pg": "^7.14.10",
+    "pg": "^8.5.1",
+    "ts-node": "^9.1.1"
+  }
+}
